@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #container {
+    width: 1500px;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+  }
+
+  #tittle {
+    font-family: "Modak";
+    letter-spacing: 2px;
+    font-size: 50px;
+    font-weight: 300;
+  }
+  
+  #logo {
+    width: 100px;
+  }
+  
+  /* Scores */
+  
+  #score-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 48px 0;
+  }
+  
+  #player-score-title, #computer-score-title, #versus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    border: 1px solid black;
+    margin: 20px;
+    width: 250px;
+    height: 300px;
+    border-radius: 16px;
+    letter-spacing: 2px;
+    
+  }
+
+  #versus {
+    border: none;
+  }
+
+  #versus h2 {
+    text-align: center;
+    font-weight: 48px;
+    
+  }
+
+  #versus-title {
+    font-size: 128px;
+    font-family: "Roboto";
+  }
+  
+  #player-score, #computer-score {
+    width: 350px;
+    height: 45%;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 24px;
+  }
+
+  #player-rps-score, #computer-rps-score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding: 0 16px;
+    font-size: 24px;
+    font-family: "Roboto";
+    width: 350px;
+    height: 45%;
+    
+  }
+  
+  
+  /* Round results */
+  
+  #choice-result {
+    display: flex;
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #round-results {
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #round-result-content {
+    font-size: 32px;
+    font-family: "Roboto";
+    text-align: center;
+  }
+  
+  #player-choice-result, #round-results, #computer-choice-result {
+    margin: 20px;
+  }
+  
+  #player-choice-icon, #computer-choice-icon {
+    width: 150px;
+  }
+  
+  /* Choices */
+  
+  #choice {
+
+    justify-content: center;
+    align-items: center;
+    gap: 148px;
+    margin: 0 auto;
+    padding: 16px;
+  }
+
+  #text {
+    display: flex;
+    justify-content:center;
+    
+  }
+
+  #choice-content {
+    font-family: "Roboto";
+    font-size: 32px;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    gap: 24px;
+  }
+  
+  #rock, #paper, #scissors {
+    margin: 20px;
+  }
+  
+  #rock-icon, #paper-icon, #scissors-icon {
+    width: 100px;
+  }
+
+  .choice-click {
+    border: none;
+    background-color: white;
+  }

@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <title>Rock Paper Scissors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Roboto Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <!-- Modak Font for Header title -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Modak&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+  <title>Rock Paper Scissors</title>
 </head>
 <body>
 
-    
-    
-    <script src="./js/script.js"></script>
+  <main id="container">
+
+        <header id="nav">
+            <h1 id="tittle">
+                Rock Paper Scissors
+            </h1>
+            <div id="img">
+                <img id="logo" src="./images/rock-paper-scissors logo.png" alt="A rock with rock paper scissors icons">
+            </div>
+        </header>
+
+        <div id="score-container">
+
+            <div id="player-score-title">
+                <div id="player-score">
+                    <h2>Player</h2>
+                    <h3>Score: <span id="player-result">3</span></h2>
+                </div>
+
+                <div id="player-rps-score">
+                    <p class="option-score-player" id="rock-player">Rock:</p>
+                    <p class="option-score-player" id="Paper-player">Paper:</p>
+                    <p class="option-score-player" id="Scissors-player">Scissors:</p>
+                </div>
+            </div>
+
+            <div id="versus">
+                <h2 id="versus-title">VS</h2>
+            </div>
+
+            <div id="computer-score-title">
+                <div id="computer-score">
+                    <h2>Computer</h2>
+                    <h3>Score: <span id="computer-result">5</span></h2>
+                </div>
+
+                <div id="computer-rps-score">
+                    <p class="option-score-computer" id="rock-computer">Rock:</p>
+                    <p class="option-score-computer" id="Paper-computer">Paper:</p>
+                    <p class="option-score-computer" id="Scissors-computer">Scissors:</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="choice-result">
+
+            <div id="player-choice-result">
+                <img id="player-choice-icon" src="./images/rock icon.png" alt="rock paper scissors icons">
+            </div>
+
+            <div id="round-results">
+                <p id="round-result-content">
+                    You picked Rock and Computer picked Paper <br>
+                    Yippy, You win this round!
+                </p>
+            </div>
+
+            <div id="computer-choice-result">
+                <img id="computer-choice-icon" src="./images/Paper Icon right.png" alt="rock paper scissors icon">
+            </div>
+        </div>
+
+        <div id="choice">
+            <div id="text">
+                <h2 id="choice-content">Make your choice</h2>
+            </div>
+
+            <div id="buttons">
+                <button class="choice-click" id="rock"><img id="rock-icon" src="./images/rock icon.png" alt="rock paper scissors: rock hand gesture"></button>
+                <button class="choice-click" id="paper"><img id="paper-icon" src="./images/Paper Icon.png" alt="rock paper scissors: paper hand gesture"></button>
+                <button class="choice-click" id="scissors"><img id="scissors-icon" src="./images/Scissor Icon.png" alt="rock paper scissors: scissors hand gesture"></button>
+            </div>
+            
+        </div>
+  </main>
+
+  <script src="./js/script.js"></script>
+  
 </body>
 </html>
