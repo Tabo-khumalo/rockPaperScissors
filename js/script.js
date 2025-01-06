@@ -122,7 +122,7 @@ function playRound (e) {
         computerResultIcon.setAttribute("src", "./images/rock icon right.png");
         computerChoiceResult.appendChild(computerResultIcon);
         roundResult.textContent = `
-            You picked Scissors and Computer picked ${computerChoice}.
+            You picked Rock and Computer picked ${computerChoice}.
             it's a tie, try again.
         `
         round.textContent++;
