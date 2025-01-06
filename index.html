@@ -46,7 +46,9 @@
 
             <div id="versus">
                 <h2 id="versus-title">VS</h2>
+                <h2 id="game-rounds">Round</h2> <span id="current-round"></span>
             </div>
+            
 
             <div id="computer-score-title">
                 <div id="computer-score-container">
@@ -57,7 +59,7 @@
                 <div id="computer-rps-score">
                     <p class="option-score-computer" id="rock-computer">Rock:<span id="rock-computer-score"></span></p>
                     <p class="option-score-computer" id="paper-computer">Paper:<span id="paper-computer-score"></span></p>
-                    <p class="option-score-computer" id="scissors-computer">Scissors: <span id="scissors-computer-score"></span></p>
+                    <p class="option-score-computer" id="scissors-computer">Scissors: <span id="scissor-computer-score"></span></p>
                 </div>
             </div>
 
@@ -67,33 +69,43 @@
         <div id="choice-result">
 
             <div id="player-choice-result">
-                
+            
+            </div>
+            
+
+            <div class ="result" id="round-results">
+               
             </div>
 
-            <div id="round-results">
-                <p id="round-result-content">
-                    
-                </p>
-            </div>
 
             <div id="computer-choice-result">
                 
             </div>
+
+            
         </div>
 
+        <div id="resetBtn">
+            <button class="dont-show" id="reset">Play Again</button>
+        </div>
         <div id="choice">
+            
+
             <div id="text">
+                
                 <h2 id="choice-content">Make your choice</h2>
             </div>
 
             <div id="buttons">
-                <button class="choice-click" id="rock"><img id="rock-icon" src="./images/rock icon.png" alt="rock paper scissors: rock hand gesture"></button>
-                <button class="choice-click" id="paper"><img id="paper-icon" src="./images/Paper Icon.png" alt="rock paper scissors: paper hand gesture"></button>
-                <button class="choice-click" id="scissors"><img id="scissors-icon" src="./images/Scissor Icon.png" alt="rock paper scissors: scissors hand gesture"></button>
+                <button class="choice-click" id="rock">Rock</button>
+                <button class="choice-click" id="paper">Paper</button>
+                <button class="choice-click" id="scissors">Scissors</button>
             </div>
             
         </div>
   </main>
+
+
 
   <script src="./js/script.js"></script>
   

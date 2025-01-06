@@ -62,23 +62,28 @@
     height: 300px;
     border-radius: 16px;
     letter-spacing: 2px;
+    border: transparent;
     
   }
 
-  #versus {
-    border: none;
+
+  #game-rounds{
+    font-size: 32px;
+    font-family: "Roboto";
   }
 
-  #versus h2 {
-    text-align: center;
-    font-weight: 48px;
-    
+  #current-round {
+    font-size: 32px;
+    font-size: "Roboto";
   }
 
   #versus-title {
     font-size: 128px;
     font-family: "Roboto";
+    text-align: center;
   }
+
+ 
   
   #player-score-container, #computer-score-container {
     width: 350px;
@@ -113,6 +118,12 @@
     align-items: center;
   }
 
+  #rounds {
+    width: 100px;
+    display: flex;
+
+  }
+
   #round-results {
     height: 180px;
     display: flex;
@@ -120,9 +131,18 @@
     align-items: center;
   }
 
-  #round-result-content {
+  #round-result-content, #round-results{
     font-size: 32px;
     font-family: "Roboto";
+    text-align: center;
+  }
+
+  .result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-size: "Roboto";
     text-align: center;
   }
   
@@ -134,10 +154,67 @@
     width: 150px;
   }
   
+  /* game result */
+
+  #game-result-container{
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-size:32px;
+    font-family: "Roboto";
+  }
+
+  #final-score-content {
+    padding-top: 16px;
+  }
+
+  #reset {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "Roboto";
+    font-weight: bold;
+    padding: 8px;
+    margin-top: 24px;
+    width: 200px;
+    border-radius: 8px;
+  }
+
+  
+  h3, h4 {
+    font-family: "Roboto";
+    font-size: 32px; 
+  }
+
+  #computer-player-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 16px 16px;
+  }
+
+  #final-score-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #logo-2{
+    padding: 0 144px;
+    width: 200px;
+  }
+
+  /* reset */
+
+  #resetBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+
   /* Choices */
   
   #choice {
-
     justify-content: center;
     align-items: center;
     gap: 148px;
@@ -165,9 +242,10 @@
   }
 
   
-  #rock, #paper, #scissors {
+  /* #rock, #paper, #scissors {
     margin: 20px;
-  }
+    
+  } */
   
   #rock-icon, #paper-icon, #scissors-icon {
     width: 100px;
@@ -176,20 +254,49 @@
   .choice-click {
     border: 1px solid transparent;
     background-color: white;
+    padding: 24px;
+    border-radius: 50%;
     width: 200px;
     height: 200px;
-    border-radius: 50%;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: "modak";
+    color:#954F95;
     box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 29px 1px rgba(0,0,0,0.75);
   }
 
+  
+
   .choice-click:hover {
     background-color: #f7f9f680;
+    
     
   }
 
   .choice-click:active {
     background-color: #954F95;
+    color: #F7F9F6;
     
+  }
+
+  .dont-show {
+    display: none;
+  }
+ 
+  #reset {
+    border: none;
+    color: #954F95;
+    font-family: "roboto";
+  }
+
+  #reset:hover {
+    background-color: #f7f9f680;
+  }
+
+  #reset:active {
+    background-color: #954F95;
+    color: #F7F9F6;
+    border:  1px solid #F7F9F6;
   }
